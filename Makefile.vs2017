@@ -1,0 +1,25 @@
+
+NAME=krycc
+CC=cl.exe
+CPPFLAGS=/EHsc /MT /O2 /Iclang/include
+
+OBJS = \
+	main.obj \
+	jit.obj \
+    predef.obj
+
+.SUFFIXES :
+.SUFFIXES : .cpp .obj
+
+all: $(NAME).exe
+
+clean:
+	del *.exe *.obj > NUL
+
+$(NAME).exe: $(OBJS)
+	$(CC) /Fe$(NAME).exe $(OBJS)
+
+.cpp.obj:
+	$(CC) -c $(CPPFLAGS) -Fo$*.obj $<
+
+
