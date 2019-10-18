@@ -1,3 +1,7 @@
+# Clang Library
+clang/include
+clang/lib
+
 # Prerequisites
 *.d
 
