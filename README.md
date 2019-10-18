@@ -20,3 +20,26 @@ I tried this with the version 8.0.0 of Clang.
 *   If you want to use a host prgrams funcion, please see [predef.cpp](predef.cpp).
 *   [jit.h](jit.h) is available for C and C++. It defines `ClangJitCompiler` class wrapping C functions.
 
+## How to Make It
+
+### Build It
+
+Try below after preparing Clang library modules under `clang` folder.
+
+```c
+$ make.cmd
+```
+
+Now you will find `krycc.exe`.
+
+### Test It
+
+Look at the folder carefully, and you will also find `fib.c`.
+Just do it as below.
+
+```c
+$ krycc.exe fib.c
+9227465
+```
+
+That's all.
