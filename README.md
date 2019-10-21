@@ -1,5 +1,8 @@
 # clang-jit
 
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+
+
 Example of C Compiler using JIT Engine of Clang.
 
 ## Overview
