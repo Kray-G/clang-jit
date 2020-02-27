@@ -52,8 +52,8 @@ Clang is very amazing compiler frontend and backend and it has a very high level
 But it is too much big component...
 For example, my `krycc.exe` is over 30MB with only one executable file.
 
-If you want a compact C Compiler for your light use with direct execution on JIT or VM, look at [kcci-platform][].
+If you want a compact C Compiler for your light use with direct execution on JIT or VM, look at [kcs][].
 
 I believe it will help you.
 
-[kcci-platform]: https://github.com/Kray-G/kcci-platform
+[kcs]: https://github.com/Kray-G/kcs
